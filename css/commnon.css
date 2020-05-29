@@ -133,19 +133,26 @@ header {
     margin: 0px  0px 0px auto;
 
 }
-/* .items a{
-    display: inline-flex;
+.items a{
+
     align-items: center;
 
-} */
-.malito {
-    display: inline;
-    align-items: center;
 }
 .icon {
-
     outline: 1px solid blue;
+    display: inline;
 
+}
+.malito {
+    align-self: center;
+}
+.icon-tell {
+    align-self: center;
+}
+.malito .icon,
+.icon-tell .icon {
+    display: inline;
+    margin-right: 10px;
 }
 
 /* .malito ::before{
@@ -170,6 +177,7 @@ header {
 .items .icon-tell {
     min-width: 122px;
     margin-left: 50px;
+
 
 }
     /* <!-- footer --> */
