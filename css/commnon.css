@@ -6,6 +6,7 @@
     --primary-white-color: #ffffff;
 
     --secondary-bg-color: #E5E5E5;
+    --first-bg-color: #AFB1B8;
     --third-bg-color: #F5F4FA;
 }
 /* !color: #2196F3; */
@@ -27,7 +28,9 @@ img {
     display: block;
     max-width: 100%;
 }
-
+svg {
+    margin: auto;
+}
 .header-logo {
     text-decoration: none;
     padding-top: 24px;
@@ -78,12 +81,12 @@ header {
     margin-right: auto;
     padding-bottom: 94px;
     padding-top: 94px;
-    /* outline: 1px solid red; */
 }
 
 .link {
     text-decoration: none;
 }
+
 .list{
     list-style: none;
     display: flex;
@@ -134,14 +137,14 @@ header {
 
 }
 .items a{
-
+    display:flex ;
     align-items: center;
 
 }
 .icon {
-    outline: 1px solid blue;
+    /* outline: 1px solid blue; */
     display: inline;
-    
+
 
 }
 .malito {
@@ -156,32 +159,13 @@ header {
     margin-right: 10px;
 }
 
-/* .malito ::before{
-    content: "";
-    width: 17px; height: 12px;
-    background-image: url(../img/mail.svg);
-    background-repeat: no-repeat;
-    background-size: contain;
-    margin-right: 10px;
-
-} */
-
-/* .icon-tell ::before{
-    content: "";
-    width: 10px; height: 15px;
-    background-image: url(../img/mobile.svg);
-    background-repeat: no-repeat;
-    background-size: contain;
-    margin-right: 10px;
-
-} */
 .items .icon-tell {
     min-width: 122px;
     margin-left: 50px;
-
-
 }
-    /* <!-- footer --> */
+
+/* <!-- footer --> */
+
 .footer {
     background: #2F303A;
     color: var(--primary-white-color);
@@ -246,34 +230,6 @@ header {
 .social {
     justify-content: space-around;
 }
-.instagram {
-    background-image: url(../img/instagram.svg);
-    background-repeat: no-repeat;
-    width: 44px; height: 44px;
-    display: inline-block;
-    background-position: center center;
-}
-.twitter {
-    background-image: url(../img/twitter.png);
-    background-repeat: no-repeat;
-    width: 44px; height: 44px;
-    display: inline-block;
-    background-position: center center;
-}
-.facebook {
-    background-image: url(../img/facebook.svg);
-    background-repeat: no-repeat;
-    width: 44px; height: 44px;
-    display: inline-block;
-    background-position: center center;
-}
-.linkedin {
-    background-image: url(../img/linkedin.svg);
-    background-repeat: no-repeat;
-    width: 44px; height: 44px;
-    display: inline-block;
-    background-position: center center;
-}
 .join .title {
     text-align: left;
 }
@@ -282,30 +238,27 @@ header {
     padding-left: 0px;
     margin-top: 24px;
 }
-.join .instagram,
-.join .twitter,
-.join .facebook,
-.join .linkedin {
-    background-color:rgba(255, 255, 255, 0.1);;
-    border-radius: 90%;
-}
-.social .instagram:hover {
-    background-color: var(--accent-color);
-    border-radius: 90%;
-}
-.social .twitter:hover {
-    background-color: var(--accent-color);
-    border-radius: 90%;
-}
-.social .facebook:hover {
-   background-color: var(--accent-color);
-   border-radius: 90%;
-}
-.social .linkedin:hover {
-   background-color: var(--accent-color);
-   border-radius: 90%;
-}
 
+.join .item-link {
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.social .item +.item{
+    margin-left: 10px;
+}
+.join .item {
+   --color3: var(--primary-white-color);
+   background: rgba(255, 255, 255, 0.1);
+   border-radius: 50%;
+}
+.join .item :hover {
+    --color3: var(--primary-white-color);
+    background: var(--accent-color);
+}
 .footer .sign {
     margin-left: 93px;
 }
@@ -318,50 +271,38 @@ header {
     padding-bottom: 21px;
     margin: 0px;
 }
+
+.sign .two {
+    display: flex;
+    font-size: 16px;
+    line-height: 1.9;
+    text-align: center;
+    letter-spacing: 0.06em;
+    
+}
 .signature {
     /* width: 350px;
     height: 50px; */
     border: 1px solid rgba(255, 255, 255, 0.3);
     font-weight: 400;
-    font-size: 16px;
-    line-height: 1.9;
     text-align: left;
     letter-spacing: 0.06em;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
     margin-right: 12px;
     padding: 12px 18px;
-    display: inline;
-}
-.sign {
-    white-space: nowrap;
+    display: block;
 }
 .sign .button {
-    background: var(--third-bg-color);
+    background:  var(--accent-color);
+    color: var(--primary-white-color);
     font-weight: 900;
-    font-size: 16px;
-    line-height: 1.9;
-    text-align: center;
-    letter-spacing: 0.06em;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
     padding: 12px 62px 12px 29px;
     border: 1px solid transparent;
-    display: inline;
-    /* width: 200px;
-    height: 50px; */
+    display: flex;
 }
-.sign .button:focus,
-.sign .button:hover {
-    background: var(--accent-color);
-    color: var(--primary-white-color);
-    box-shadow : 0px 4px 4px rgba(0, 0, 0, 0.15);
-    border: 1px solid var(--accent-color);
-}
-
-/* .copyright {
-
-} */
 .line {
     border: 1px solid rgba(255, 255, 255, 0.1);
     margin-bottom: 18px;
@@ -376,3 +317,7 @@ header {
     border-top-width: 3px;
     margin-bottom: 0;
 }
+.button .icon {
+    margin-left: 10px;
+}
+

@@ -61,7 +61,8 @@ h1 {
     height: 120px;
     background-color: var(--third-bg-color);
     margin-bottom: 30px;
-
+    display: flex;
+    align-items: center;
 }
 .position .process,
 .team .social {
@@ -169,7 +170,6 @@ h2 {
 .team .item {
     background-color: var(--primary-white-color);
     box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12);
-    border-radius: 4px;
 }
 
 .team p {
@@ -193,7 +193,26 @@ h4 {
     text-align: center;
 }
 .team .social {
-    margin: 0px 35px 24px;
+    margin: 0px 32px 24px;
+}
+.team .item-link {
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.social .point +.point{
+    margin-left: 10px;
+}
+.team .point {
+   --color3: var(--first-bg-color);
+
+}
+.team .point :hover {
+    --color3: var(--primary-white-color);
+    background: var(--accent-color);
 }
 
     /* <!-- klienty --> */
@@ -206,58 +225,19 @@ h4 {
 
 }
 
-.client-ya {
-    background-image: url(../img/YACO.svg);
-    display: inline-block;
-    background-position:  center center;
-    width: 170px; height: 90px;
-    background-repeat: no-repeat;
+.customers .item {
     border: 1px solid #AFB1B8;
     border-radius: 4px;
+    width: calc((100% - 150px) / 6);
+    height: 90px;
 }
+.customers a {
+    height: 90px;
+    display: flex;
 
-.client-tagline {
-    background-image: url(../img/tagline.svg);
-    background-repeat: no-repeat;
-    background-position:  center center;
-    width: 170px; height: 90px;
-    display: inline-block;
-    border: 1px solid #AFB1B8;
-    border-radius: 4px;
 }
-.client-company {
-    background-image: url(../img/company.svg);
-    background-repeat: no-repeat;
-    background-position:  center center;
-    width: 170px; height: 90px;
-    display: inline-block;
-    border: 1px solid #AFB1B8;
-    border-radius: 4px;
-}
-.client-foster {
-    background-image: url(../img/foster.svg);
-    background-repeat: no-repeat;
-    background-position:  center center;
-    width: 170px; height: 90px;
-    display: inline-block;
-    border: 1px solid #AFB1B8;
-    border-radius: 4px;
-}
-.client-brand {
-    background-image: url(../img/brand.svg);
-    background-repeat: no-repeat;
-    background-position:  center center;
-    width: 170px; height: 90px;
-    display: inline-block;
-    border: 1px solid #AFB1B8;
-    border-radius: 4px;
-}
-.client-tag {
-    background-image: url(../img/tag.svg);
-    background-repeat: no-repeat;
-    background-position:  center center;
-    width: 170px; height: 90px;
-    display: inline-block;
-    border: 1px solid #AFB1B8;
-    border-radius: 4px;
+.customers .item :hover {
+    border: 1px solid var(--accent-color);
+    --color3 : var(--accent-color);
+
 }
