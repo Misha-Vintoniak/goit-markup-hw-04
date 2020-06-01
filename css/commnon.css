@@ -221,6 +221,9 @@ svg {
 .adres .address+.address {
     margin-bottom: 9px;
 }
+.adres p {
+    margin: 0px;
+}
 
 .footer-nav .join {
     margin-left: 69px;

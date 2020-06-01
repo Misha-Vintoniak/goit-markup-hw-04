@@ -82,13 +82,17 @@ h2 {
     margin-top: 0px;
 }
 .item-services img {
-    border-radius: 5px 5px 0px 0px;
+    /* border-radius: 5px 5px 0px 0px; */
     overflow: hidden;
-
+}
+.item-services:focus,
+.item-services:hover {
+    cursor: pointer;
+    box-shadow: 1px 4px 6px rgba(0, 0, 0, 0.16), 0px 4px 4px rgba(0, 0, 0, 0.06), 0px 1px 1px rgba(0, 0, 0, 0.12);
 }
 .bloc {
     border: 1px solid #EEEEEE;
-    border-radius: 0px 0px 5px 5px;
+    /* border-radius: 0px 0px 5px 5px; */
     overflow: hidden;
     padding: 24px 20px;
 }
