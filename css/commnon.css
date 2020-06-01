@@ -235,7 +235,7 @@ svg {
     margin-top: 24px;
 }
 
-.join .item-link {
+.item-link {
     width: 44px;
     height: 44px;
     border-radius: 50%;
@@ -251,7 +251,7 @@ svg {
    background: rgba(255, 255, 255, 0.1);
    border-radius: 50%;
 }
-.join .item :hover {
+.join .item:hover {
     --color3: var(--primary-white-color);
     background: var(--accent-color);
 }
