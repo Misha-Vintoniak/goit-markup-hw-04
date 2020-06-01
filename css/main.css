@@ -226,15 +226,16 @@ h4 {
 }
 
 .customers .item {
-    border: 1px solid #AFB1B8;
     border-radius: 4px;
     width: calc((100% - 150px) / 6);
     height: 90px;
 }
 .customers a {
-    height: 90px;
+    width: 100%;
+    height: 100%;
     display: flex;
-
+    border: 1px solid #AFB1B8;
+    border-radius: 4px;
 }
 .customers .item :hover {
     border: 1px solid var(--accent-color);

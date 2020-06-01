@@ -30,17 +30,7 @@ img {
 }
 svg {
     margin: auto;
-}
-.header-logo {
-    text-decoration: none;
-    padding-top: 24px;
-    padding-bottom: 25px;
-
-    font-family: 'Raleway', sans-serif;
-    font-weight: 700;
-    font-size: 26px;
-    line-height: 1.2;
-    letter-spacing: 0.03em;
+    border: none;
 }
 .visually-hidden {
     position: absolute;
@@ -52,20 +42,6 @@ svg {
     clip: rect(0 0 0 0);
     overflow: hidden;
   }
-header {
-    border-bottom: 1px solid #ECECEC;
-}
-.site-nav .logo {
-    color: var(--accent-color);
-}
-
-.site-nav .site-logo {
-    color: #000000;
-}
-
-.site-footer {
-    color: var(--primary-white-color);
-}
 
 .container{
     margin-left: auto;
@@ -83,16 +59,32 @@ header {
     padding-top: 94px;
 }
 
+.header-logo {
+    text-decoration: none;
+    padding-top: 24px;
+    padding-bottom: 25px;
+
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.2;
+    letter-spacing: 0.03em;
+}
+.site-nav .logo {
+    color: var(--accent-color);
+}
+
+.site-nav .site-logo {
+    color: #000000;
+}
+
+.site-footer {
+    color: var(--primary-white-color);
+}
+
 .link {
     text-decoration: none;
 }
-
-.list{
-    list-style: none;
-    display: flex;
-
-}
-
 .site-nav {
     display: flex;
     align-items: center;
@@ -102,25 +94,34 @@ header {
 }
 
 .site-nav .link {
-    padding: 32px 0px 32px 0px;
+    padding: 32px 0px 27px 0px;
+}
+.list{
+    list-style: none;
+    display: flex;
 }
 .list .link {
     border-bottom: 4px transparent ;
+    --color1: var(--primary-text-color);
+    --color4: var(--primary-text-color);
+
 }
 .list .link:focus,
 .list .link:hover {
     color: var(--accent-color);
-    border-bottom: 4px solid;
+    border-bottom: 4px solid var(--accent-color);
     border-radius: 2px;
+    --color1: var(--accent-color);
+    --color4: var(--accent-color);
 
 }
 .list .link.current {
     color: var(--accent-color);
-    border-bottom: 4px solid;
+    border-bottom: 4px solid var(--accent-color);
     border-radius: 2px;
 }
 .site-nav .list-logo {
-    margin: 0px 0px 0px 86px;
+    margin: 0px 0px 0px 85px;
 }
 .site-nav .list{
     font-family: Roboto;
@@ -128,24 +129,17 @@ header {
     font-size: 14px;
     line-height: 1.2;
     letter-spacing: 0.02em;
-
     padding: 0px;
 
 }
 .site-nav .items {
     margin: 0px  0px 0px auto;
-
+    padding: 0px;
 }
-.items a{
-    display:flex ;
-    align-items: center;
 
-}
 .icon {
     /* outline: 1px solid blue; */
     display: inline;
-
-
 }
 .malito {
     align-self: center;
@@ -179,6 +173,7 @@ header {
     text-align: left;
     list-style: none;
     margin-bottom: 28px;
+    justify-content: space-between;
 
 }
 .adres {
@@ -278,7 +273,7 @@ header {
     line-height: 1.9;
     text-align: center;
     letter-spacing: 0.06em;
-    
+
 }
 .signature {
     /* width: 350px;
