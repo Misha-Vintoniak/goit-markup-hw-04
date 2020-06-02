@@ -86,6 +86,9 @@ svg {
 .link {
     text-decoration: none;
 }
+.list-logo .link {
+    color: var(--secondary-text-color);
+}
 .site-nav {
     display: flex;
     align-items: center;
@@ -103,7 +106,7 @@ svg {
 }
 .list .link {
     border-bottom: 4px transparent ;
-    --color1: var(--primary-text-color);
+    --color2: var(--primary-text-color);
     --color4: var(--primary-text-color);
 
 }
@@ -112,9 +115,9 @@ svg {
     color: var(--accent-color);
     border-bottom: 4px solid var(--accent-color);
     border-radius: 2px;
-    --color1: var(--accent-color);
+    --color2: var(--accent-color);
     --color4: var(--accent-color);
-
+    cursor: pointer;
 }
 .list .link.current {
     color: var(--accent-color);
@@ -260,6 +263,7 @@ svg {
 .join .item:hover {
     --color3: var(--primary-white-color);
     background: var(--accent-color);
+    cursor: pointer;
 }
 .footer .sign {
     margin-left: 93px;
